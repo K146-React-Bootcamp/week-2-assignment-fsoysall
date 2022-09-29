@@ -176,16 +176,15 @@ const RenderSayfalamaButtonlari = (tbody) => {
     const SayfaSayisi = parseInt(todos.length / SES);
     const Sayfalayici = `<td class="SayfalayiciTd" colspan="5" >
     <button onClick="AktifSayfaDegis(1)" > İLK SAYFA</button>
-    <button onClick="AktifSayfaDegis(${AktifSayfa - 1})"  ${AktifSayfa > 1 ? `` : `disabled="disabled"`} > Önceki </button>
+    <button onClick="AktifSayfaDegis(${AktifSayfa - 1})" > Önceki </button>
     
-    <button onClick="AktifSayfaDegis(${AktifSayfa + 1})" ${AktifSayfa < SayfaSayisi ? `` : `disabled="disabled"`} > Sonraki </button>
+    ${AktifSayfa < SayfaSayisi ? `<button onClick="AktifSayfaDegis(${AktifSayfa + 1})" > Sonraki </button>` : ""} 
     <button onClick="AktifSayfaDegis(${SayfaSayisi})" > SON SAYFA [ ${SayfaSayisi} ]</button>
 
     &nbsp; | &nbsp; 
     
     
-    <button onClick="AktifSayfaDegis(${AktifSayfa - 5})"  ${AktifSayfa - 5 > 0 ? `` : `disabled="disabled"`} > - 5 </button>
-    <button  onClick="AktifSayfaDegis(${AktifSayfa - 1})" ${AktifSayfa - 1 > 0 ? `` : `disabled="disabled"`} > ${AktifSayfa - 1} </button>
+    ${AktifSayfa - 1 > 0 ? `<button onClick="AktifSayfaDegis(${AktifSayfa - 1})" > ${AktifSayfa - 1} </button>` : ""} 
     
     &nbsp; | &nbsp; 
 
@@ -193,10 +192,20 @@ const RenderSayfalamaButtonlari = (tbody) => {
     
     &nbsp; | &nbsp; 
     
-    <button onClick="AktifSayfaDegis(${AktifSayfa + 1})" ${AktifSayfa + 1 < SayfaSayisi +1 ? `` : `disabled="disabled"`} > ${AktifSayfa + 1} </button>
-    
+    ${AktifSayfa + 1 < SayfaSayisi ? `<button onClick="AktifSayfaDegis(${AktifSayfa + 1})" > ${AktifSayfa + 1} </button>` : ""} 
+
+
     &nbsp; | &nbsp; 
-    <button onClick="AktifSayfaDegis(${AktifSayfa + 5})"  ${AktifSayfa + 1 < SayfaSayisi ? `` : `disabled="disabled"`} > +5 </button> 
+    ${AktifSayfa - 5 > 0 ? `<button onClick="AktifSayfaDegis(${AktifSayfa - 5})" > - 5 </button>` : ""} 
+    ${AktifSayfa + 5 < SayfaSayisi ? `<button onClick="AktifSayfaDegis(${AktifSayfa + 5})" > +5 </button>` : ""} 
+&nbsp; | &nbsp; 
+    
+    
+
+    ..
+
+
+
 
     </td>`
 

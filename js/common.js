@@ -1,3 +1,6 @@
+console.log("               Common.JS");
+
+
 const renderHeader = () => {
 	const activePage = window.location.pathname;
 	const template = `

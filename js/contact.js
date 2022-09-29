@@ -1,3 +1,6 @@
+console.log("               contact.JS");
+
+
 renderHeader();
 
 const root = document.querySelector("#root");

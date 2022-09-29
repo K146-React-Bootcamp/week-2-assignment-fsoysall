@@ -1,5 +1,7 @@
 
-## Sıralama ödevi algoritması
+# Sıralama ödevi algoritması
+
+[ToDoS.js : Yapılacaklar Ödevi](./index.html) (<http://127.0.0.1:3000/index.html>)
 
 ##### todos.js dosyası içerisinde düzenlenecek
 
@@ -8,13 +10,20 @@ event listener hangi kolon için tıklanıyorsa sort metodu kullanılarak sıral
 sıralanmış todos'todus içerisine atılacak.
 renderTodos metodu çalıştırılacak.
 
+# HTTP - Fetch Api Ödevi
+
+* README.md dosyası, txt, js dosyası açarak yapılabilir;
+
+* HTTP Status'ün
+  * Görevleri nelerdir? Bu görevlerin anlamlarını açıklayınız.
+
+* HTTP Request'in metodlari  nelerdir?
+  
+* Fetch API'nin metodlari ile örnekleri
+
 ___
 
-## HTTP - Fetch Api Ödevi
-
-##### README.md dosyası, txt, js dosyası açarak yapılabilir
-
-# * HTTP Status'ün
+### * HTTP Status'ün
 
 * Görevleri nelerdir? Bu görevlerin anlamlarını açıklayınız.
 
@@ -32,7 +41,7 @@ ___
 
 ___
 
-# * HTTP Request'in metodlari  nelerdir?
+### * HTTP Request'in metodlari  nelerdir?
 
 **HTTP Method'ları ;** ( <https://www.w3schools.com/tags/ref_httpmethods.asp> )
 
@@ -48,7 +57,7 @@ ___
 
 ___
 
-# *  Fetch API'nin metodlari ile örnekleri
+### *  Fetch API'nin metodlari ile örnekleri
 
 ### FETCH ÜZERİNE ÖRNEKLER
 
@@ -63,7 +72,7 @@ ___
     Axios: GET, POST, PUT, DELETE
     Fetch: GET, POST, PUT, DELETE
 
-## GET
+### GET
 
 ( <https://ozcanarican.com/article/kodlar/2021-07-29-js-fetch-nasil-kullanilir> )
 
@@ -83,8 +92,7 @@ const verileriOku = async () => {
   console.log(jsonSonuc);
 };
 
-
-## POST
+### POST
 
 ( <https://ozcanarican.com/article/kodlar/2021-07-29-js-fetch-nasil-kullanilir> )
 
@@ -109,7 +117,7 @@ const dogrula = (json) => {
   }
 };
 
-## DELETE
+### DELETE
 
 useEffect(() => {
     // DELETE request using fetch inside useEffect React hook
@@ -118,7 +126,6 @@ useEffect(() => {
 
 // empty dependency array means this effect will only run once (like componentDidMount in classes)
 }, []);
-
 
 ### DELETE + ERR HANDLER
 
@@ -143,9 +150,6 @@ useEffect(() => {
         });
 }, []);
 
-
-
 **Detaylı bilgiler için ;**
 
 * <https://www.bezkoder.com/react-fetch-example/#React_Fetch_example_Overview>
-

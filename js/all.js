@@ -1,3 +1,6 @@
+console.log("               all.JS");
+
+
 const data = [
   { name: "ahmet", age: 30, gender: "erkek" },
   { name: "ayşe", age: 26, gender: "kadın" },
