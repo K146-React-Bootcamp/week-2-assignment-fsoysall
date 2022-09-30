@@ -1,9 +1,8 @@
 
 # Sıralama ödevi algoritması
 
-[ToDoS.js : Yapılacaklar Ödevi](./index.html) (<http://127.0.0.1:3000/index.html>)
-
 [Netlify: ToDoS App](https://k146-week2-todos.netlify.app/)
+[ToDoS.js : Yapılacaklar Ödevi](./index.html) (<http://127.0.0.1:3000/index.html>)
 
 ##### todos.js dosyası içerisinde düzenlenecek
 
