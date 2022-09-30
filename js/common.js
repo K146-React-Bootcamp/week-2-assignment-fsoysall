@@ -51,3 +51,4 @@ const renderHeader = () => {
 const errorLogger = (error) => {
 	console.log({ error });
 };
+

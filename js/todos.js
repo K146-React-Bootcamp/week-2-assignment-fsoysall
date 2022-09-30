@@ -206,3 +206,4 @@ const RenderSayfalamaButtonlari = (tbody) => {
     tbody.appendChild(tr)
 
 }
+
