@@ -216,3 +216,4 @@ const RenderSayfalamaButtonlari = (tbody) => {
 
 }
 
+
